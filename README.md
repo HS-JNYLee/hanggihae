@@ -1,2 +1,2 @@
-# hanjanhae
+# hanggihae
 한성대학교 유학생들을 위한 성북구 맛집 추천 사이트
