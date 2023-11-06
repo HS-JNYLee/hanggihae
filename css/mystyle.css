@@ -1,40 +1,65 @@
+@font-face {
+    font-family: "HANNA";
+    src: url("../BMHANNA_11yrs.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    margin: 0; padding: 0; height: 100%;
+    margin: 0;
+    background: #EAEAEA;
 }
-header {
-    width:100%; height: 100px;
-    /*background-color: yellow;*/
-}
-img { /* 이미지 위치 지정 */
-    position: absolute;
-    left: 150px;
-    top: 0px;
-}
-font { /* 폰트 위치 지정 */
-    position: absolute;
-    left: 450px;
-    top: 15px;
-}
-a {
-    text-decoration: none; /* 링크 밑줄 없애기 */
-    color:black  /* a태그 폰트 색 바꾸기 */
-}
-a:hover{
-    color:blue
-}
+
 section {
     width: 70%; height: 70%; float: left;
+    background-color: oliverab; 
 }
-.px-large {
-    font-size: 35px;
+
+.top-nav {
+    display: flex;
+    padding: 0 12rem;
+    box-shadow: 0 0.2rem 3rem #A1A1A1;
+    background: white;
+    justify-content: space-evenly;
 }
-#round {
-    width: 300px;
-    padding: 20px;
-    background-color:darkgray;
-    border-radius: 50px;
-    border-style: ridge;
+
+.top-nav-layout {
+    font-family: HANNA, serif;
+    display: flex;
+    height: 6rem;
+    width: 12rem;
+    padding: 2rem;
+    font-size: 5rem;
+}
+
+.top-nav-layout:hover > .nav-link {
+    color: #96D1F2;
+}
+
+.nav-link {
+    height: fit-content;
+    width: fit-content;
+    color: black;
+    align-self: center;
+    text-decoration: none;
+}
+
+#home-img {
+    padding-top: 1rem;
+    height: 6rem;
+}
+
+#section-img {
+    position: relative;
+    left: 350px;
+    top: 30px;
+    width: 1000px;
+    height: 500px;
+}
+
+p {
+    font-family: HANNA, serif;
     position: absolute;
-    left: 700px;
-    top: 700px;
+    left: 590px; top:700px;
+    font-size: 35px;
 }
