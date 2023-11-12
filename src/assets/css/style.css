@@ -9,6 +9,9 @@ body {
     margin: 0;
     background: #EAEAEA;
 }
+span, div, nav {
+    font-family: HANNA, serif;
+}
 
 .top-nav {
     display: flex;
@@ -19,7 +22,6 @@ body {
 }
 
 .top-nav-layout {
-    font-family: HANNA, serif;
     display: flex;
     height: 6rem;
     width: 12rem;
@@ -42,4 +44,157 @@ body {
 #home-img {
     padding-top: 1rem;
     height: 6rem;
+}
+
+#main-banner {
+    display: flex;
+    margin-top: 4rem;
+    background: linear-gradient(to left, #77E7FF 70%, #00A3FF);
+}
+
+#main-banner-img {
+    height: 20rem;
+}
+
+#main-banner-text {
+    display: flex;
+    align-self: center;
+    color: white;
+    font-size: xxx-large;
+    margin-left: 40rem;
+}
+
+#map-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+
+#map-iframe {
+    display: flex;
+    background: white;
+    padding: 2rem;
+    height: 37rem;
+    border: black 0.2rem solid;
+    border-radius: 30px;
+}
+
+#map-img {
+    height: 35rem;
+    align-self: center;
+}
+
+#review-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+#review-question {
+    display: flex;
+}
+
+#location-mark {
+    height: 5rem;
+}
+
+#question-text {
+    font-size: xxx-large;
+    align-self: center;
+    margin-left: 3rem;
+}
+
+#review {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: black 0.2rem solid;
+    border-radius: 30px;
+    margin-top: 2rem;
+}
+
+#review-top {
+    display: flex;
+    padding: 2rem;
+}
+
+#restaurant-title {
+    display: flex;
+    flex-direction: column;
+}
+
+#restaurant-name {
+    display: flex;
+    align-self: center;
+    font-size: xxx-large;
+    margin-bottom: 1rem;
+}
+
+#review-img{
+    display: flex;
+}
+
+#review-img-1 {
+    height: 20rem;
+}
+
+#review-img-side {
+    display: flex;
+    flex-direction: column;
+}
+
+#review-img-2 {
+    height: 10rem;
+}
+
+#review-img-3 {
+    height: 10rem;
+}
+
+#restaurant-text {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border: black 0.2rem solid;
+    border-radius: 30px;
+    margin-left: 2rem;
+    width: 32rem;
+}
+
+.restaurant-text-inline {
+    font-size: x-large;
+    padding: 1rem 0;
+}
+
+#detail {
+    align-self: flex-end;
+    text-decoration: underline;
+}
+
+#review-bottom {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+#star-score {
+    display: flex;
+    margin-left: 2rem;
+    width: 33%;
+}
+
+.star {
+    height: 3rem;
+}
+
+#phone-number {
+    width: 33%;
+    font-size: xx-large;
+    align-self: center;
+}
+
+#site-address {
+    width: 33%;
+    font-size: xx-large;
+    align-self: center;
 }
