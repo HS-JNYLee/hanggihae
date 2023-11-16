@@ -44,21 +44,133 @@ body {
     height: 6rem;
 }
 
+ul{
+    list-style:none;
+    }
+
 .section {
     position: absolute;
     top: 20%;
-    left: 20%;
-    border-radius: 50px;
+    left: 25%;
+    border-radius: 30px;
     border-style:solid;
-    width: 60%; height: 78%;
+    width: 70%; height: 100%;
     background-color: white;
 }
 
 .title {
     font-family: HANNA, serif;
     font-size: 40px;
+    text-align: center;
+    line-height: 5px;
+}
+
+.s1 {
     position: absolute;
-    top: 0;
-    left: 42.5%;
-    width: 60%; height: 5%;
+    background-color: #96D1F2;
+    border-radius: 30px;
+    border-style:solid;
+    top: 8%;
+    left: 2%;
+    width: 93%; height: 44%;
+}
+
+.s2 {
+    position: absolute;
+    background-color: #96D1F2;
+    border-radius: 30px;
+    border-style:solid;
+    top: 56%;
+    left: 2%;
+    width: 93%; height: 44%;
+}
+
+.box1 {
+    position: absolute;
+    background-color: white;
+    border-radius: 30px;
+    border-style:solid;
+    top: 5%; left: 1.5%;
+    width: 70%; height: 90%;
+}
+
+.box2 {
+    position: absolute;
+    background-color: white;
+    border-radius: 30px;
+    border-style: solid;
+    top: 5%; right: 1.5%;
+    width: 25%; height: 90%;
+}
+
+.box3 {
+    position: absolute;
+    background-color: white;
+    border-radius: 30px;
+    border-style: solid;
+    top: 8.5%; right: 3%;
+    width: 58%; height: 60%;
+}
+
+.address {
+    font-family: HANNA, serif;
+    font-size: normal;
+    position: absolute;
+    top: 5%; left: 5%;
+}
+
+.close_time {
+    position: absolute;
+    font-family: HANNA, serif;
+    top: 20%; left: 5%;
+}
+
+.review {
+    position: absolute;
+    font-family: HANNA, serif;
+    top: 40%; left: 5%;
+}
+
+.outlink {
+    position: absolute;
+    font-family: HANNA, serif;
+    top: 80%; right: 5%;
+}
+.name {
+    font-family: HANNA, serif;
+    position: absolute;
+    left: 8%;
+    font-size: 45px;
+    line-height: 30px;
+}
+
+#review1 {
+    position: absolute;
+    border-radius: 35px;
+    top: 25%; left: 4%;
+    width: 20%; height: 45%;
+}
+
+#review2 {
+    position: absolute;
+    border-radius: 30px;
+    top: 25%; left: 24%;
+    width: 10%; height: 22.5%;
+}
+
+#review3 {
+    position: absolute;
+    border-radius: 30px;
+    top: 47.5%; left: 24%;
+    width: 10%; height: 22.5%;
+}
+
+.numberCircle {
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+    top: 0%; left: 5%;
+    width: 4%; height: 5%;
+    background-color: white;
+    font
 }
