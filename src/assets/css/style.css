@@ -15,10 +15,10 @@ span, div, nav {
 
 .top-nav {
     display: flex;
-    padding: 0 12rem;
+    width: 100%;
     box-shadow: 0 0.2rem 3rem #A1A1A1;
     background: white;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .top-nav-layout {
@@ -26,7 +26,7 @@ span, div, nav {
     height: 6rem;
     width: 12rem;
     padding: 2rem;
-    font-size: 5rem;
+    font-size: 6vw;
 }
 
 .top-nav-layout:hover > .nav-link {
@@ -50,6 +50,7 @@ span, div, nav {
     display: flex;
     margin-top: 4rem;
     background: linear-gradient(to left, #77E7FF 70%, #00A3FF);
+    justify-content: center;
 }
 
 #main-banner-img {
@@ -60,8 +61,8 @@ span, div, nav {
     display: flex;
     align-self: center;
     color: white;
-    font-size: xxx-large;
-    margin-left: 40rem;
+    font-size: 300%;
+    margin-left: 10%;
 }
 
 #map-wrapper {
@@ -73,14 +74,16 @@ span, div, nav {
 #map-iframe {
     display: flex;
     background: white;
-    padding: 2rem;
-    height: 37rem;
+    padding: 1rem;
+    width: 45%;
+    height: fit-content;
     border: black 0.2rem solid;
     border-radius: 30px;
+    margin-right: 1%;
 }
 
 #map-img {
-    height: 35rem;
+    width: 100%;
     align-self: center;
 }
 
@@ -88,6 +91,7 @@ span, div, nav {
     display: flex;
     flex-direction: column;
     margin-bottom: 4rem;
+    width: 50%;
 }
 
 #review-question {
@@ -121,6 +125,7 @@ span, div, nav {
 #restaurant-title {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 #restaurant-name {
@@ -135,20 +140,21 @@ span, div, nav {
 }
 
 #review-img-1 {
-    height: 20rem;
+    width: 66%;
 }
 
 #review-img-side {
     display: flex;
     flex-direction: column;
+    width: 33%;
 }
 
 #review-img-2 {
-    height: 10rem;
+    width: 100%;
 }
 
 #review-img-3 {
-    height: 10rem;
+    width: 100%;
 }
 
 #restaurant-text {
@@ -184,17 +190,41 @@ span, div, nav {
 }
 
 .star {
-    height: 3rem;
+    width: 20%;
 }
 
 #phone-number {
     width: 33%;
-    font-size: xx-large;
+    font-size: 2vw;
     align-self: center;
+    text-align: center;
 }
 
 #site-address {
     width: 33%;
-    font-size: xx-large;
+    font-size: 2vw;
     align-self: center;
+    text-align: center;
+}
+
+/* 스크롤 바 전체에 대한 스타일 지정 */
+::-webkit-scrollbar {
+    width: 1rem; /* 스크롤 바의 너비 */
+    height: 1rem; /* 스크롤 바의 높이 */
+    background-color: #989898; /* 스크롤 바의 배경색 */
+    border: solid 0.2rem #000000;
+    border-radius: 1rem;
+
+}
+
+/* 스크롤 바의 색상 지정 */
+::-webkit-scrollbar-thumb {
+    background-color: #BCBCBC; /* 스크롤 바의 색상 */
+    border: solid 0.2rem #000000;
+    border-radius: 1rem;
+}
+
+/* 스크롤 바 호버 시 색상 지정 */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #00A3FF; /* 스크롤 바의 색상 */
 }
