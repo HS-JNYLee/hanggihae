@@ -23,8 +23,7 @@ span, div, nav {
 
 .top-nav-layout {
     display: flex;
-    height: 6rem;
-    width: 12rem;
+    width: fit-content;
     padding: 2rem;
     font-size: 6vw;
 }
