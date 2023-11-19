@@ -111,7 +111,67 @@ body {
     height: 3rem;
     /* float: right; */
 }
+
+#logo {
+    position: relative;
+    left: 16rem; top: 10rem;
+    width: 10rem; height: 9rem;
+}
+
+.tool {
+    width: 75rem;
+    margin: 8rem;
+    height: 30rem;
+}
   
+.language_of_use{
+    font-family: HANNA, serif;
+    font-size: 3rem;
+    position: relative;
+    left: 32rem; width: 50rem;
+}
+
+#map {
+    margin-top: 0rem;
+    margin-left: 1rem;
+    width: 100rem; height: 50rem;
+}
+
+.use {
+    position: relative;
+    left: 2rem;
+    width: 100rem;
+}
+
+.introduction{
+    font-family: HANNA, serif;
+    font-size: 3rem;
+    margin-left: 35rem;
+} 
+
+#list {
+    margin-left: 3rem;
+}
+.list_introduction {
+    position: relative;
+    font-family: HANNA, serif;
+    font-size: 3rem;
+    left: 50rem; width: 50rem;
+    bottom: 23rem;
+}
+
+#provide_of_list {
+    margin-left: 13rem;
+}
+
+.provide_introduction{
+    position: relative;
+    font-family: HANNA, serif;
+    font-size: 3rem;
+    left: 20rem; width: 70rem;
+    bottom: 0rem;
+}
+ 
 .pagination a:hover:not(.active) {background-color: #4caf50;}
 
 .slide:nth-child(1){
