@@ -49,128 +49,139 @@ ul{
     }
 
 .section {
-    position: absolute;
-    top: 20%;
-    left: 25%;
-    border-radius: 30px;
+    position: relative;
+    top: 0rem;
+    left: 25rem;
+    border-radius: 1.875rem;
     border-style:solid;
-    width: 70%; height: 100%;
+    width: 70rem; height: 50rem;
     background-color: white;
 }
 
 .title {
     font-family: HANNA, serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
-    line-height: 5px;
+    line-height: 0.3125rem;
 }
 
 .s1 {
-    position: absolute;
+    position: relative;
     background-color: #96D1F2;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     border-style:solid;
-    top: 8%;
-    left: 2%;
-    width: 93%; height: 44%;
+    bottom: 8rem;
+    left: 0rem;
+    width: 67rem; height: 22rem;
 }
 
 .s2 {
-    position: absolute;
+    position: relative;
     background-color: #96D1F2;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     border-style:solid;
-    top: 56%;
-    left: 2%;
-    width: 93%; height: 44%;
+    bottom: 7rem;
+    left: 0;
+    width: 67rem; height: 22rem;
 }
 
 .box1 {
-    position: absolute;
+    position: relative;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     border-style:solid;
-    top: 5%; left: 1.5%;
-    width: 70%; height: 90%;
+    top: 1rem; left: 1rem;
+    width: 47rem; height: 20rem;
 }
 
 .box2 {
-    position: absolute;
+    position: relative;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     border-style: solid;
-    top: 5%; right: 1.5%;
-    width: 25%; height: 90%;
+    bottom: 19.2rem; left: 49rem;
+    width: 17rem; height: 20rem;
 }
 
 .box3 {
-    position: absolute;
+    position: relative;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     border-style: solid;
-    top: 8.5%; right: 3%;
-    width: 58%; height: 60%;
+    bottom: 15rem; left: 16.5rem;
+    width: 28rem; height: 12rem;
 }
 
 .address {
     font-family: HANNA, serif;
     font-size: normal;
-    position: absolute;
-    top: 5%; left: 5%;
+    position: relative;
+    top: 0.5rem; left: 1.4rem;
 }
 
 .close_time {
-    position: absolute;
+    position: relative;
     font-family: HANNA, serif;
-    top: 20%; left: 5%;
+    top: 0.8rem; left: 1.4rem;
 }
 
 .review {
-    position: absolute;
+    position: relative;
     font-family: HANNA, serif;
-    top: 40%; left: 5%;
+    top: 1rem; left: 1.4rem;
 }
 
 .outlink {
-    position: absolute;
+    position: relative;
     font-family: HANNA, serif;
-    top: 80%; right: 5%;
+    top: 1.2rem; left: 22rem;
 }
 .name {
     font-family: HANNA, serif;
-    position: absolute;
-    left: 8%;
-    font-size: 45px;
-    line-height: 30px;
+    position: relative;
+    left: 4rem;
+    font-size: 2.8125rem;
+    line-height: 1.875rem;
 }
 
 #review1 {
-    position: absolute;
-    border-radius: 35px;
-    top: 25%; left: 4%;
-    width: 20%; height: 45%;
+    position: relative;
+    border-radius: 2.1875rem;
+    bottom: 2.5rem; left: 1rem;
+    width: 10rem; height: 9rem;
 }
 
 #review2 {
-    position: absolute;
-    border-radius: 30px;
-    top: 25%; left: 24%;
-    width: 10%; height: 22.5%;
+    position: relative;
+    border-radius: 1.875rem;
+    bottom: 7rem; left: 0.8rem;
+    width: 5rem; height: 4.5rem;
 }
 
 #review3 {
-    position: absolute;
-    border-radius: 30px;
-    top: 47.5%; left: 24%;
-    width: 10%; height: 22.5%;
+    position: relative;
+    border-radius: 1.875rem;
+    bottom: 2.4rem; right: 4.5rem;
+    width: 5rem; height: 4.5rem;
 }
 
-.numberCircle {
-    position: absolute;
+#numberCircle {
+    position: relative;
+    font-family: HANNA, serif;
+    font-size: 2rem;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    border: 0.3rem solid;
     border-radius: 50%;
-    border-style: solid;
-    top: 0%; left: 5%;
-    width: 4%; height: 5%;
+    right: 1rem; bottom: 2rem;
     background-color: white;
-    font
+    text-align: center;
+    line-height: 4.5rem;
+}
+
+.number {
+    position: relative;
+    font-family: HANNA, serif;
+    font-size: 2rem;
 }
