@@ -55,7 +55,6 @@ body {
     width: 68rem;
     height: 41.9375rem;
     animation: slider 15s infinite linear;
-    /*display: inline-block; 또는 display: inline-flex;*/ 
     font-size: 0;
 }
 
@@ -109,7 +108,6 @@ body {
     top: 0rem; left: 60rem;
     width: 3rem;
     height: 3rem;
-    /* float: right; */
 }
 
 #logo {
@@ -170,8 +168,8 @@ body {
     font-size: 3rem;
     left: 20rem; width: 70rem;
     bottom: 0rem;
-}
- 
+} 
+
 .pagination a:hover:not(.active) {background-color: #4caf50;}
 
 .slide:nth-child(1){
@@ -202,5 +200,110 @@ body {
   
     100% {
       transform: translateX(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .slider {
+        left: 26%;
+    }
+    
+    .pagination {
+        position: relative;
+        top: 44.5rem; left: 45rem;
+        display: inline-block;
+    }    
+} 
+
+@media (min-width: 2560px) {
+    .slider {
+        position: relative;
+        top: 3rem;
+        left: 30rem;
+    }
+    
+    .pagination {
+        position: relative;
+        top: 4rem; left: 73rem;
+    }
+    
+    #StartStop {
+        position: relative;
+        top: 2rem; left: 90rem;
+    }
+    
+    #logo {
+        position: relative;
+        left: 40rem;
+    }
+      
+    .language_of_use{
+        position: relative;
+        left: 55rem; width: 50rem;
+    }
+    
+    #map {
+        margin-top: 0%;
+        margin-left: 30%;
+    }
+    
+    .use {
+        position: relative;
+        left: 2rem;
+        width: 100rem;
+    }
+    
+    .introduction{
+        margin-left: 65rem;
+    } 
+    
+    #list {
+        margin-left: 30rem;
+    }
+    .list_introduction {
+        position: relative;
+        left: 80rem;
+    }
+    
+    #provide_of_list {
+        margin-left: 40rem;
+    }
+    
+    .provide_introduction{
+        position: relative;
+        left: 45rem;
+    }
+
+    .pagination a:hover:not(.active) {background-color: #4caf50;}
+
+    .slide:nth-child(1){
+        animation-delay: 0;
+    }
+    .slide:nth-child(3){
+        animation-delay: -5s;
+    }
+    .slide:nth-child(2){
+        animation-delay: -10s;
+    }
+    
+    @keyframes slider {
+        0% {
+          transform: translateX(0);
+        }
+      
+        26% {
+          transform: translateX(0);
+        }
+        33% {
+          transform: translateX(-100%);
+          animation-timing-function: step-end;
+        }
+        93% {
+          transform: translateX(100%);
+        }
+      
+        100% {
+          transform: translateX(0);
+        }
     }
 }
