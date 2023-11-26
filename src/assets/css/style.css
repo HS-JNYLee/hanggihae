@@ -76,10 +76,10 @@ span, div, nav {
     background: white;
     padding: 1rem;
     width: 45%;
-    height: fit-content;
     border: black 0.2rem solid;
     border-radius: 30px;
     margin-right: 1%;
+    height: 65vh;
 }
 
 #map-img {
