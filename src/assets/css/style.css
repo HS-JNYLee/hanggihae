@@ -68,6 +68,7 @@ span, div, nav {
     display: flex;
     justify-content: space-evenly;
     margin-top: 5rem;
+    align-items: center;
 }
 
 #map-iframe {
