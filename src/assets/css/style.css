@@ -25,7 +25,7 @@ span, div, nav {
     display: flex;
     width: fit-content;
     padding: 2rem;
-    font-size: 6vw;
+    font-size: 5vw;
 }
 
 .top-nav-layout:hover > .nav-link {
@@ -227,4 +227,43 @@ span, div, nav {
 /* 스크롤 바 호버 시 색상 지정 */
 ::-webkit-scrollbar-thumb:hover {
     background-color: #00A3FF; /* 스크롤 바의 색상 */
+}
+
+.language-btn, .humid-period-button {
+    height: 100%;
+    border-radius: 0.5rem;
+    color: #000;
+    background-color: #80FFB3;
+    box-shadow: 1px 4px 0 #6BD194;
+    margin-bottom: 7px;
+    width: 100%;
+}
+.language-btn:hover,  .humid-period-button:hover{
+    color: #fff;
+    border-color: #000;
+    background-color: #FF80DA;
+    box-shadow: 1px 4px 0 #C364A6;
+}
+.language-btn:active, .humid-period-button:active {
+    animation-fill-mode: forwards;
+    color: #000;
+    border-color: #000;
+    background-color: #FF80DA;
+    box-shadow: 1px 1px 0 #C364A6;
+}
+
+.language-link {
+    width: 30%;
+    margin-bottom: 17px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-top: 10px;
+    height: 130px;
 }
