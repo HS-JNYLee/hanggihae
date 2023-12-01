@@ -129,6 +129,13 @@ body {
     left: 32rem; width: 50rem;
 }
 
+.language_of_use:lang(vi){
+    font-family: HANNA, serif;
+    font-size: 3rem;
+    position: relative;
+    left: 32rem; width: 60rem;
+}
+
 #map {
     margin-top: 0rem;
     margin-left: 1rem;
@@ -145,6 +152,12 @@ body {
     font-family: HANNA, serif;
     font-size: 3rem;
     margin-left: 35rem;
+} 
+
+.introduction:lang(vi){
+    font-family: HANNA, serif;
+    font-size: 3rem;
+    margin-left: 27rem;
 } 
 
 #list {
