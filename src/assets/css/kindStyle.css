@@ -160,24 +160,42 @@ ul{
     top: 1.2rem; left: 22rem;
 }
 
+/*ㅡㅡㅡㅡㅡ언어별 설정ㅡㅡㅡㅡㅡ*/
+
 .outlink:lang(en) {
     position: relative;
     font-family: HANNA, serif;
     top: 0rem; left: 21rem;
 }
 
-.name {
-    font-family: HANNA, serif;
+.outlink:lang(vi) {
     position: relative;
-    left: 4rem;
-    font-size: 2.8125rem;
-    line-height: 1.875rem;
+    font-family: HANNA, serif;
+    top: 0rem; left: 21rem;
 }
 
 .name:lang(en){
     font-family: HANNA, serif;
     position: relative;
     left: 3rem;
+    font-size: 2.8125rem;
+    line-height: 1.875rem;
+}
+
+.name:lang(vi){
+    font-family: HANNA, serif;
+    position: relative;
+    left: 3rem;
+    font-size: 2.8125rem;
+    line-height: 1.875rem;
+}
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+.name {
+    font-family: HANNA, serif;
+    position: relative;
+    left: 4rem;
     font-size: 2.8125rem;
     line-height: 1.875rem;
 }
@@ -216,7 +234,6 @@ ul{
     font-size: 2rem;
     z-index: 1;
     width: 4.375rem;
-    /* height: 4.375rem; */
     border: 0.3rem solid;
     border-radius: 50%;
     right: 1rem; bottom: 2rem;
