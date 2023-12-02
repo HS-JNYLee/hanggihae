@@ -5,26 +5,35 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Motoya";
+    src: url("../../lib/MotoyaExBirch%20W55%20W6%20mono.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     background: #EAEAEA;
 }
 
+span, div, nav {
+    font-family: HANNA, serif;
+}
+
 .top-nav {
     display: flex;
-    padding: 0 12rem;
+    width: 100%;
     box-shadow: 0 0.2rem 3rem #A1A1A1;
     background: white;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .top-nav-layout {
-    font-family: HANNA, serif;
     display: flex;
-    height: 6rem;
-    width: 12rem;
+    width: fit-content;
     padding: 2rem;
-    font-size: 5rem;
+    font-size: 5vw;
 }
 
 .top-nav-layout:hover > .nav-link {
@@ -160,42 +169,10 @@ ul{
     top: 1.2rem; left: 22rem;
 }
 
-/*ㅡㅡㅡㅡㅡ언어별 설정ㅡㅡㅡㅡㅡ*/
-
-.outlink:lang(en) {
-    position: relative;
-    font-family: HANNA, serif;
-    top: 0rem; left: 21rem;
-}
-
-.outlink:lang(vi) {
-    position: relative;
-    font-family: HANNA, serif;
-    top: 0rem; left: 21rem;
-}
-
-.name:lang(en){
-    font-family: HANNA, serif;
-    position: relative;
-    left: 3rem;
-    font-size: 2.8125rem;
-    line-height: 1.875rem;
-}
-
-.name:lang(vi){
-    font-family: HANNA, serif;
-    position: relative;
-    left: 3rem;
-    font-size: 2.8125rem;
-    line-height: 1.875rem;
-}
-
-/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
-
 .name {
     font-family: HANNA, serif;
     position: relative;
-    left: 4rem;
+    left: 3rem;
     font-size: 2.8125rem;
     line-height: 1.875rem;
 }
@@ -320,6 +297,83 @@ ul{
     left: 0.5rem;
     font-size: 0.95rem;
 }
+
+/*ㅡㅡㅡㅡㅡ언어별 설정ㅡㅡㅡㅡㅡ*/
+
+/* 일본어 */
+.top-nav-layout:lang(ja) {
+    font-family: Motoya, serif;
+    font-size: 4.5rem;
+}
+
+.title:lang(ja) {
+    font-family: Motoya, serif;
+}
+
+.name:lang(ja) {
+    font-family: Motoya, serif;
+    left: 2rem;
+    font-size: 2.8rem;
+    line-height: 3rem;
+}
+
+#review3:lang(ja) {
+    right: 4.7rem;
+}
+
+.close_time:lang(ja) {
+    position: relative;
+    top: 0.8rem; left: 1.4rem;
+}
+
+span:lang(ja){
+    font-family: Motoya, serif;
+}
+
+.address:lang(ja) {
+    font-family: Motoya, serif;
+}
+
+.review:lang(ja) {
+    position: relative;
+    font-family: Motoya, serif;
+    top: 1rem; left: 1.4rem;
+}
+
+.outlink:lang(ja) {
+    font-family: Motoya, serif;
+    top: 0.5rem; left: 21rem;
+}
+
+.customerReview:lang(ja) {
+    position: relative;
+    font-family: Motoya, serif;
+    left: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.box4:lang(ja) {
+    height: 6rem;
+}
+
+/* 영어 */
+
+.outlink:lang(en) {
+    top: 0rem; left: 21rem;
+}
+
+/* 베트남어 */
+.outlink:lang(vi) {
+    top: 0rem; left: 21rem;
+}
+
+/* 중국어 */
+/* .top-nav-layout:lang(zh-cn) {
+    font-family: Motoya, serif;
+    font-size: 4.5rem;
+} */
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 
 @media (min-width: 2560px) {
     .section {

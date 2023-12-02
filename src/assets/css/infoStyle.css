@@ -5,26 +5,39 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Motoya";
+    src: url("../../lib/MotoyaExBirch%20W55%20W6%20mono.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     background: #EAEAEA;
 }
 
+span, div, nav {
+    font-family: HANNA, serif;
+}
+
+span:lang(ja), div:lang(ja), nav:lang(ja) {
+    font-family: Motoya, serif;
+}
+
 .top-nav {
     display: flex;
-    padding: 0 12rem;
+    width: 100%;
     box-shadow: 0 0.2rem 3rem #A1A1A1;
     background: white;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .top-nav-layout {
-    font-family: HANNA, serif;
     display: flex;
-    height: 6rem;
-    width: 12rem;
+    width: fit-content;
     padding: 2rem;
-    font-size: 5rem;
+    font-size: 5vw;
 }
 
 .top-nav-layout:hover > .nav-link {
@@ -129,13 +142,6 @@ body {
     left: 32rem; width: 50rem;
 }
 
-.language_of_use:lang(vi){
-    font-family: HANNA, serif;
-    font-size: 3rem;
-    position: relative;
-    left: 32rem; width: 60rem;
-}
-
 #map {
     margin-top: 0rem;
     margin-left: 1rem;
@@ -152,12 +158,6 @@ body {
     font-family: HANNA, serif;
     font-size: 3rem;
     margin-left: 35rem;
-} 
-
-.introduction:lang(vi){
-    font-family: HANNA, serif;
-    font-size: 3rem;
-    margin-left: 27rem;
 } 
 
 #list {
@@ -239,6 +239,53 @@ body {
     }
 }
 
+/*ㅡㅡㅡㅡ언어별 설정ㅡㅡㅡㅡ*/
+
+/* 일본어 */
+.p1:lang(ja) {
+    font-family: Motoya, serif;
+}
+
+.p2:lang(ja) {
+    font-family: Motoya, serif;
+}
+
+.p3:lang(ja) {
+    font-family: Motoya, serif;
+}
+
+.top-nav-layout:lang(ja) {
+    font-family: Motoya, serif;
+    font-size: 4.5rem;
+}
+
+.language_of_use:lang(ja) {
+    font-family: Motoya, serif;
+}
+
+.introduction:lang(ja){
+    font-family: Motoya, serif;
+}
+
+.list_introduction:lang(ja){
+    font-family: Motoya, serif;
+}
+
+.provide_introduction:lang(ja){
+    font-family: Motoya, serif;
+}
+
+/* 베트남어 */
+.introduction:lang(vi){
+    margin-left: 27rem;
+}
+
+.language_of_use:lang(vi){
+    left: 32rem; width: 60rem;
+}
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
 @media (max-width: 1024px) {
     .slider {
         left: 26%;
@@ -277,6 +324,22 @@ body {
         position: relative;
         left: 55rem; width: 50rem;
     }
+    /* ㅡㅡㅡㅡㅡㅡ언어별 정리ㅡㅡㅡㅡㅡㅡ */
+    .language_of_use:lang(vi){
+        left: 55rem;
+    }
+
+    .introduction:lang(vi){
+        margin-left: 56rem;
+        width: 80rem;
+    }
+
+    .language_of_use:lang(ja) {
+        font-family: Motoya, serif;
+        left: 55rem;
+    }
+
+    /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
     
     #map {
         margin-top: 0%;
