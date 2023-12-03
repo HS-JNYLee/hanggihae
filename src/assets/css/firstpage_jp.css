@@ -1,0 +1,21 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 20%;
+    right: 9%;
+    font-size: 80pt;
+    font-weight: bold;
+    font-family: 'Bagel Fat One', Arial, sans-serif;
+    /*font-style: 'Bagel Fat One', italic;*/
+}
