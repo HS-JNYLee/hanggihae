@@ -12,17 +12,27 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "MinSans";
+    src: url("../../lib/MiSans-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Vsouvbi";
+    src: url("../../lib/VSOUVBI.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     background: #EAEAEA;
 }
 
-span, div, nav {
+span, nav {
     font-family: HANNA, serif;
-}
-
-span:lang(ja), div:lang(ja), nav:lang(ja) {
-    font-family: Motoya, serif;
 }
 
 .top-nav {
@@ -284,6 +294,91 @@ span:lang(ja), div:lang(ja), nav:lang(ja) {
     left: 32rem; width: 60rem;
 }
 
+.top-nav-layout:lang(vi) {
+    font-family: Vsouvbi, serif;
+    font-size: 4.5rem;
+}
+
+.p1:lang(vi) {
+    font-family: Vsouvbi, serif;
+}
+
+.p2:lang(vi) {
+    position: relative;
+    bottom: 3rem;
+    font-family: Vsouvbi, serif;
+}
+
+.p3:lang(vi) {
+    position: inherit;
+    top: 28rem; left: 10rem;
+    font-family: Vsouvbi, serif;
+}
+
+.language_of_use:lang(vi) {
+    position: relative;
+    bottom: 2rem;
+    font-family: Vsouvbi, serif;
+}
+
+.introduction:lang(vi){
+    font-family: Vsouvbi, serif;
+}
+
+.list_introduction:lang(vi){
+    font-family: Vsouvbi, serif;
+}
+
+.provide_introduction:lang(vi){
+    position: relative;
+    left: 15rem;
+    font-family: Vsouvbi, serif;
+}
+
+/* 중국어 */
+.top-nav-layout:lang(zh-cn) {
+    font-family: MinSans, serif;
+    font-size: 4.5rem;
+}
+
+.p1:lang(zh-cn) {
+    font-family: MinSans, serif;
+}
+
+.p2:lang(zh-cn) {
+    font-family: MinSans, serif;
+}
+
+.p3:lang(zh-cn) {
+    font-family: MinSans, serif;
+}
+
+.pagination:lang(zh-cn){
+    top: 5rem;
+}
+
+#StartStop:lang(zh-cn) {
+    top: 3rem;
+}
+
+.language_of_use:lang(zh-cn) {
+    font-family: MinSans, serif;
+}
+
+.introduction:lang(zh-cn){
+    font-family: MinSans, serif;
+}
+
+.list_introduction:lang(zh-cn){
+    font-family: MinSans, serif;
+}
+
+.provide_introduction:lang(zh-cn){
+    position: relative;
+    left: 30rem;
+    font-family: MinSans, serif;
+}
+
 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 
 @media (max-width: 1024px) {
@@ -334,8 +429,15 @@ span:lang(ja), div:lang(ja), nav:lang(ja) {
         width: 80rem;
     }
 
+    .provide_introduction:lang(vi){
+        left: 45rem;
+    }
+
     .language_of_use:lang(ja) {
-        font-family: Motoya, serif;
+        left: 55rem;
+    }
+
+    .provide_introduction:lang(zh-cn){
         left: 55rem;
     }
 

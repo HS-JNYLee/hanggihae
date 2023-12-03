@@ -12,6 +12,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "MiSans";
+    src: url("../../lib/MiSans-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Vsouvbi";
+    src: url("../../lib/VSOUVBI.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     background: #EAEAEA;
@@ -313,7 +327,6 @@ ul{
 .name:lang(ja) {
     font-family: Motoya, serif;
     left: 2rem;
-    font-size: 2.8rem;
     line-height: 3rem;
 }
 
@@ -363,15 +376,89 @@ span:lang(ja){
 }
 
 /* 베트남어 */
+
+.top-nav-layout:lang(vi) {
+    font-family: Vsouvbi, serif;
+    font-size: 4.5rem;
+}
+
+.title:lang(vi) {
+    font-family: Vsouvbi, serif;
+}
+
+.name:lang(vi) {
+    font-family: Vsouvbi, serif;
+    left: 2rem;
+    line-height: 3rem;
+}
+
+span:lang(vi){
+    font-family: Vsouvbi, serif;
+}
+
+.close_time:lang(vi){
+    position: relative;
+    top: 0rem;
+}
+
+.address:lang(vi) {
+    position: relative;
+    top: 0rem;
+    font-family: Vsouvbi, serif;
+}
+
+.review:lang(vi) {
+    position: relative;
+    font-family: Vsouvbi, serif;
+    top: 0rem; left: 1.4rem;
+}
+
 .outlink:lang(vi) {
-    top: 0rem; left: 21rem;
+    bottom: 3rem; left: 21rem;
+}
+
+.customerReview:lang(vi){
+    font-family: Vsouvbi, serif;
+    font-size: 0.9rem;
 }
 
 /* 중국어 */
-/* .top-nav-layout:lang(zh-cn) {
-    font-family: Motoya, serif;
+.top-nav-layout:lang(zh-cn) {
+    font-family: MiSans, serif;
     font-size: 4.5rem;
-} */
+}
+
+.title:lang(zh-cn) {
+    font-family: MiSans, serif;
+}
+
+.name:lang(zh-cn) {
+    font-family: MiSans, serif;
+    line-height: 3rem;
+}
+
+.address:lang(zh-cn) {
+    font-family: MiSans, serif;
+}
+
+span:lang(zh-cn) {
+    font-family: MiSans, serif;
+}
+
+.review:lang(zh-cn) {
+    font-family: MiSans, serif;
+}
+
+.outlink:lang(zh-cn) {
+    top: 0rem; left: 22.5rem;
+}
+
+.customerReview:lang(zh-cn) {
+    position: relative;
+    font-family: MiSans, serif;
+    left: 1rem;
+    font-size: 0.95rem;
+}
 
 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 
