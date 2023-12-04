@@ -1,0 +1,469 @@
+@font-face {
+    font-family: "HANNA";
+    src: url("../../lib/BMHANNA_11yrs.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Motoya";
+    src: url("../../lib/MotoyaExBirch%20W55%20W6%20mono.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MiSans";
+    src: url("../../lib/MiSans-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Vsouvbi";
+    src: url("../../lib/VSOUVBI.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background: #EAEAEA;
+}
+
+span, div, nav {
+    font-family: HANNA, serif;
+}
+
+.top-nav {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 0.2rem 3rem #A1A1A1;
+    background: white;
+    justify-content: center;
+}
+
+.top-nav-layout {
+    display: flex;
+    width: fit-content;
+    padding: 2rem;
+    font-size: 5vw;
+}
+
+.top-nav-layout:hover > .nav-link {
+    color: #96D1F2;
+}
+
+.nav-link {
+    height: fit-content;
+    width: fit-content;
+    color: black;
+    align-self: center;
+    text-decoration: none;
+}
+
+#home-img {
+    padding-top: 1rem;
+    height: 6rem;
+}
+
+ul{
+    list-style:none;
+}
+
+.section {
+    position: relative;
+    top: 0rem;
+    left: 28rem;
+    border-radius: 1.875rem;
+    border-style:solid;
+    width: 70rem; height: 50rem;
+    background-color: white;
+    overflow-y: scroll;
+}
+
+/* 스크롤 바 전체에 대한 스타일 지정 */
+::-webkit-scrollbar {
+    width: 1rem; /* 스크롤 바의 너비 */
+    height: 1rem; /* 스크롤 바의 높이 */
+    background-color: #989898; /* 스크롤 바의 배경색 */
+    border: solid 0.2rem #000000;
+    border-radius: 1rem;
+
+}
+
+/* 스크롤 바의 색상 지정 */
+::-webkit-scrollbar-thumb {
+    background-color: #BCBCBC; /* 스크롤 바의 색상 */
+    border: solid 0.2rem #000000;
+    border-radius: 1rem;
+}
+
+/* 스크롤 바 호버 시 색상 지정 */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #00A3FF; /* 스크롤 바의 색상 */
+}
+
+.title {
+    font-family: HANNA, serif;
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 0.3125rem;
+}
+
+.s1 {
+    position: relative;
+    background-color: #96D1F2;
+    border-radius: 1.875rem;
+    border-style:solid;
+    bottom: 8rem;
+    left: 0rem;
+    width: 67rem; height: 22rem;
+}
+
+.s2 {
+    position: relative;
+    background-color: #96D1F2;
+    border-radius: 1.875rem;
+    border-style:solid;
+    bottom: 7rem;
+    left: 0;
+    width: 67rem; height: 22rem;
+}
+
+.box1 {
+    position: relative;
+    background-color: white;
+    border-radius: 1.875rem;
+    border-style:solid;
+    top: 1rem; left: 1rem;
+    width: 47rem; height: 20rem;
+}
+
+.box2 {
+    position: relative;
+    background-color: white;
+    border-radius: 1.875rem;
+    border-style: solid;
+    bottom: 19.2rem; left: 49rem;
+    width: 17rem; height: 20rem;
+}
+
+.box3 {
+    position: relative;
+    background-color: white;
+    border-radius: 1.875rem;
+    border-style: solid;
+    bottom: 15rem; left: 16.5rem;
+    width: 28rem; height: 12rem;
+}
+
+.address {
+    font-family: HANNA, serif;
+    font-size: normal;
+    position: relative;
+    top: 0.5rem; left: 1.4rem;
+}
+
+.close_time {
+    position: relative;
+    font-family: HANNA, serif;
+    top: 0.8rem; left: 1.4rem;
+}
+
+.review {
+    position: relative;
+    font-family: HANNA, serif;
+    top: 1rem; left: 1.4rem;
+}
+
+.outlink {
+    position: relative;
+    font-family: HANNA, serif;
+    top: 1.2rem; left: 22rem;
+}
+
+.name {
+    font-family: HANNA, serif;
+    position: relative;
+    left: 3rem;
+    font-size: 2.8125rem;
+    line-height: 1.875rem;
+}
+
+#review1 {
+    position: relative;
+    border-radius: 2.1875rem;
+    bottom: 2.5rem; left: 1rem;
+    width: 10rem; height: 9rem;
+}
+
+#review2 {
+    position: relative;
+    border-radius: 1.875rem;
+    bottom: 7rem; left: 0.8rem;
+    width: 5rem; height: 4.5rem;
+}
+
+#review3 {
+    position: relative;
+    border-radius: 1.875rem;
+    bottom: 2.4rem; right: 4.5rem;
+    width: 5rem; height: 4.5rem;
+}
+
+#review4 {
+    position: relative;
+    border-radius: 1.875rem;
+    top: 1rem; left: 1rem;
+    width: 15rem; height: 8rem;
+}
+
+#numberCircle{
+    position: relative;
+    font-family: HANNA, serif;
+    font-size: 2rem;
+    z-index: 1;
+    width: 4.375rem;
+    border: 0.3rem solid;
+    border-radius: 50%;
+    right: 1rem; bottom: 2rem;
+    background-color: white;
+    text-align: center;
+    line-height: 4.5rem;
+}
+
+.rating{
+    position: relative;
+    width: 13rem; height: 3rem;
+    bottom: 13rem; left: 2rem;
+}
+
+#star1 {
+    position: relative;
+    width: 1.2rem; height: 1.2rem;
+    bottom: 0rem; left: 1rem;
+}
+
+#star2 {
+    position: relative;
+    width: 1.2rem; height: 1.2rem;
+    bottom: 0rem; left: 1.5rem;
+}
+
+#star3 {
+    position: relative;
+    width: 1.2rem; height: 1.2rem;
+    bottom: 0rem; left: 2rem;
+}
+#star4 {
+    position: relative;
+    width: 1.2rem; height: 1.2rem;
+    bottom: 0rem; left: 2.5rem;
+}
+
+#star5 {
+    position: relative;
+    width: 1.2rem; height: 1.2rem;
+    bottom: 0rem; left: 3rem;
+}
+
+.PhoneNumber {
+    position: relative;
+    width: 13rem; height: 3rem;
+    bottom: 18rem; left: 16.5rem;
+}
+
+.call {
+    font-family: HANNA, serif;
+    font-size: 2rem;
+}
+
+.e-mail {
+    position: relative;
+    width: 13rem; height: 3rem;
+    bottom: 23rem; left: 29rem;
+}
+
+.mail {
+    font-family: HANNA, serif;
+    font-size: 2rem;
+}
+
+.grade {
+    position: relative;
+    width: 10rem; height: 3rem;
+    top: 2rem; left: 5rem;
+}
+
+.box4 {
+    position: relative;
+    background-color: white;
+    border-radius: 1.875rem;
+    border-style: solid;
+    top: 1.5rem; left: 1rem;
+    width: 15rem; height: 5rem;
+}
+
+.customerReview {
+    position: relative;
+    font-family: HANNA, serif;
+    left: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/*ㅡㅡㅡㅡㅡ언어별 설정ㅡㅡㅡㅡㅡ*/
+
+/* 일본어 */
+.top-nav-layout:lang(ja) {
+    font-family: Motoya, serif;
+    font-size: 4.5rem;
+}
+
+.title:lang(ja) {
+    font-family: Motoya, serif;
+}
+
+.name:lang(ja) {
+    font-family: Motoya, serif;
+    left: 2rem;
+    line-height: 3rem;
+}
+
+#review3:lang(ja) {
+    right: 4.7rem;
+}
+
+.close_time:lang(ja) {
+    position: relative;
+    top: 0.8rem; left: 1.4rem;
+}
+
+span:lang(ja){
+    font-family: Motoya, serif;
+}
+
+.address:lang(ja) {
+    font-family: Motoya, serif;
+}
+
+.review:lang(ja) {
+    position: relative;
+    font-family: Motoya, serif;
+    top: 1rem; left: 1.4rem;
+}
+
+.outlink:lang(ja) {
+    font-family: Motoya, serif;
+    top: 0.5rem; left: 21rem;
+}
+
+.customerReview:lang(ja) {
+    position: relative;
+    font-family: Motoya, serif;
+    left: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.box4:lang(ja) {
+    height: 6rem;
+}
+
+/* 영어 */
+
+.outlink:lang(en) {
+    top: 0rem; left: 21rem;
+}
+
+/* 베트남어 */
+
+.top-nav-layout:lang(vi) {
+    font-family: Vsouvbi, serif;
+    font-size: 4.5rem;
+}
+
+.title:lang(vi) {
+    font-family: Vsouvbi, serif;
+}
+
+.name:lang(vi) {
+    font-family: Vsouvbi, serif;
+    left: 2rem;
+    line-height: 3rem;
+}
+
+span:lang(vi){
+    font-family: Vsouvbi, serif;
+}
+
+.close_time:lang(vi){
+    position: relative;
+    top: 0rem;
+}
+
+.address:lang(vi) {
+    position: relative;
+    top: 0rem;
+    font-family: Vsouvbi, serif;
+}
+
+.review:lang(vi) {
+    position: relative;
+    font-family: Vsouvbi, serif;
+    top: 0rem; left: 1.4rem;
+}
+
+.outlink:lang(vi) {
+    bottom: 3rem; left: 21rem;
+}
+
+.customerReview:lang(vi){
+    font-family: Vsouvbi, serif;
+    font-size: 0.9rem;
+}
+
+/* 중국어 */
+.top-nav-layout:lang(zh-cn) {
+    font-family: MiSans, serif;
+    font-size: 4.5rem;
+}
+
+.title:lang(zh-cn) {
+    font-family: MiSans, serif;
+}
+
+.name:lang(zh-cn) {
+    font-family: MiSans, serif;
+    line-height: 3rem;
+}
+
+.address:lang(zh-cn) {
+    font-family: MiSans, serif;
+}
+
+span:lang(zh-cn) {
+    font-family: MiSans, serif;
+}
+
+.review:lang(zh-cn) {
+    font-family: MiSans, serif;
+}
+
+.outlink:lang(zh-cn) {
+    top: 0rem; left: 22.5rem;
+}
+
+.customerReview:lang(zh-cn) {
+    position: relative;
+    font-family: MiSans, serif;
+    left: 1rem;
+    font-size: 0.95rem;
+}
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+@media (min-width: 2560px) {
+    .section {
+        left: 50%;
+    }
+} 

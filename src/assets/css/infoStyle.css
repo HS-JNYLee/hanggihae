@@ -1,0 +1,510 @@
+@font-face {
+    font-family: "HANNA";
+    src: url("../../lib/BMHANNA_11yrs.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Motoya";
+    src: url("../../lib/MotoyaExBirch%20W55%20W6%20mono.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MinSans";
+    src: url("../../lib/MiSans-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Vsouvbi";
+    src: url("../../lib/VSOUVBI.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background: #EAEAEA;
+}
+
+span, nav {
+    font-family: HANNA, serif;
+}
+
+.top-nav {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 0.2rem 3rem #A1A1A1;
+    background: white;
+    justify-content: center;
+}
+
+.top-nav-layout {
+    display: flex;
+    width: fit-content;
+    padding: 2rem;
+    font-size: 5vw;
+}
+
+.top-nav-layout:hover > .nav-link {
+    color: #96D1F2;
+}
+
+.nav-link {
+    height: fit-content;
+    width: fit-content;
+    color: black;
+    align-self: center;
+    text-decoration: none;
+}
+
+#home-img {
+    padding-top: 1rem;
+    height: 6rem;
+}
+
+#img{
+    position: relative;
+    left: 0; top: 0;
+    width: 68rem; height: 31.25rem;
+}
+
+.slide {
+    position: absolute;
+    width: 68rem;
+    height: 41.9375rem;
+    animation: slider 15s infinite linear;
+    font-size: 0;
+}
+
+.p1 {
+    font-family: HANNA, serif;
+    position: relative;
+    text-align: center;
+    font-size: 3.125rem;
+}
+
+.p2 {
+    font-family: HANNA, serif;
+    position: relative;
+    text-align: center;
+    font-size: 3.125rem;
+
+}
+.p3 {
+    font-family: HANNA, serif;
+    position: relative;
+    text-align: center;
+    font-size: 3.125rem;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+    top: 1rem;
+    left: 5rem;
+    width: 68rem;
+    height: 41.9375rem;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.pagination {
+    position: relative;
+    top: 2rem; left: 45rem;
+    display: inline-block;
+}
+  
+.pagination a {
+    color: black;
+    float: top;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#StartStop {
+    position: relative;
+    top: 0rem; left: 60rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+#logo {
+    position: relative;
+    left: 16rem; top: 10rem;
+    width: 10rem; height: 9rem;
+}
+
+.tool {
+    width: 75rem;
+    margin: 8rem;
+    height: 30rem;
+}
+  
+.language_of_use{
+    font-family: HANNA, serif;
+    font-size: 3rem;
+    position: relative;
+    left: 32rem; width: 50rem;
+}
+
+#map {
+    margin-top: 0rem;
+    margin-left: 1rem;
+    width: 100rem; height: 50rem;
+}
+
+.use {
+    position: relative;
+    left: 2rem;
+    width: 100rem;
+}
+
+.introduction{
+    font-family: HANNA, serif;
+    font-size: 3rem;
+    margin-left: 35rem;
+} 
+
+#list {
+    margin-left: 3rem;
+}
+.list_introduction {
+    position: relative;
+    font-family: HANNA, serif;
+    font-size: 3rem;
+    left: 50rem; width: 50rem;
+    bottom: 23rem;
+}
+
+#provide_of_list {
+    margin-left: 13rem;
+}
+
+.provide_introduction{
+    position: relative;
+    font-family: HANNA, serif;
+    font-size: 3rem;
+    left: 20rem; width: 70rem;
+    bottom: 0rem;
+} 
+
+.pagination a:hover:not(.active) {background-color: #4caf50;}
+
+/* 스크롤 바 전체에 대한 스타일 지정 */
+::-webkit-scrollbar {
+    width: 1rem; /* 스크롤 바의 너비 */
+    height: 1rem; /* 스크롤 바의 높이 */
+    background-color: #989898; /* 스크롤 바의 배경색 */
+    border: solid 0.2rem #000000;
+    border-radius: 1rem;
+
+}
+
+/* 스크롤 바의 색상 지정 */
+::-webkit-scrollbar-thumb {
+    background-color: #BCBCBC; /* 스크롤 바의 색상 */
+    border: solid 0.2rem #000000;
+    border-radius: 1rem;
+}
+
+/* 스크롤 바 호버 시 색상 지정 */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #00A3FF; /* 스크롤 바의 색상 */
+}
+
+
+.slide:nth-child(1){
+    animation-delay: 0;
+}
+.slide:nth-child(3){
+    animation-delay: -5s;
+}
+.slide:nth-child(2){
+    animation-delay: -10s;
+}
+
+@keyframes slider {
+    0% {
+      transform: translateX(0);
+    }
+  
+    26% {
+      transform: translateX(0);
+    }
+    33% {
+      transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    93% {
+      transform: translateX(100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+}
+
+/*ㅡㅡㅡㅡ언어별 설정ㅡㅡㅡㅡ*/
+
+/* 일본어 */
+.p1:lang(ja) {
+    font-family: Motoya, serif;
+}
+
+.p2:lang(ja) {
+    font-family: Motoya, serif;
+}
+
+.p3:lang(ja) {
+    font-family: Motoya, serif;
+}
+
+.top-nav-layout:lang(ja) {
+    font-family: Motoya, serif;
+    font-size: 4.5rem;
+}
+
+.language_of_use:lang(ja) {
+    font-family: Motoya, serif;
+}
+
+.introduction:lang(ja){
+    font-family: Motoya, serif;
+}
+
+.list_introduction:lang(ja){
+    font-family: Motoya, serif;
+}
+
+.provide_introduction:lang(ja){
+    font-family: Motoya, serif;
+}
+
+/* 베트남어 */
+.introduction:lang(vi){
+    margin-left: 27rem;
+}
+
+.language_of_use:lang(vi){
+    left: 32rem; width: 60rem;
+}
+
+.top-nav-layout:lang(vi) {
+    font-family: Vsouvbi, serif;
+    font-size: 4.5rem;
+}
+
+.p1:lang(vi) {
+    font-family: Vsouvbi, serif;
+}
+
+.p2:lang(vi) {
+    position: relative;
+    bottom: 3rem;
+    font-family: Vsouvbi, serif;
+}
+
+.p3:lang(vi) {
+    position: inherit;
+    top: 28rem; left: 10rem;
+    font-family: Vsouvbi, serif;
+}
+
+.language_of_use:lang(vi) {
+    position: relative;
+    bottom: 2rem;
+    font-family: Vsouvbi, serif;
+}
+
+.introduction:lang(vi){
+    font-family: Vsouvbi, serif;
+}
+
+.list_introduction:lang(vi){
+    font-family: Vsouvbi, serif;
+}
+
+.provide_introduction:lang(vi){
+    position: relative;
+    left: 15rem;
+    font-family: Vsouvbi, serif;
+}
+
+/* 중국어 */
+.top-nav-layout:lang(zh-cn) {
+    font-family: MinSans, serif;
+    font-size: 4.5rem;
+}
+
+.p1:lang(zh-cn) {
+    font-family: MinSans, serif;
+}
+
+.p2:lang(zh-cn) {
+    font-family: MinSans, serif;
+}
+
+.p3:lang(zh-cn) {
+    font-family: MinSans, serif;
+}
+
+.pagination:lang(zh-cn){
+    top: 5rem;
+}
+
+#StartStop:lang(zh-cn) {
+    top: 3rem;
+}
+
+.language_of_use:lang(zh-cn) {
+    font-family: MinSans, serif;
+}
+
+.introduction:lang(zh-cn){
+    font-family: MinSans, serif;
+}
+
+.list_introduction:lang(zh-cn){
+    font-family: MinSans, serif;
+}
+
+.provide_introduction:lang(zh-cn){
+    position: relative;
+    left: 30rem;
+    font-family: MinSans, serif;
+}
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+@media (max-width: 1024px) {
+    .slider {
+        left: 26%;
+    }
+    
+    .pagination {
+        position: relative;
+        top: 44.5rem; left: 45rem;
+        display: inline-block;
+    }    
+} 
+
+@media (min-width: 2560px) {
+    .slider {
+        position: relative;
+        top: 3rem;
+        left: 30rem;
+    }
+    
+    .pagination {
+        position: relative;
+        top: 4rem; left: 73rem;
+    }
+    
+    #StartStop {
+        position: relative;
+        top: 2rem; left: 90rem;
+    }
+    
+    #logo {
+        position: relative;
+        left: 40rem;
+    }
+      
+    .language_of_use{
+        position: relative;
+        left: 55rem; width: 50rem;
+    }
+    /* ㅡㅡㅡㅡㅡㅡ언어별 정리ㅡㅡㅡㅡㅡㅡ */
+    .language_of_use:lang(vi){
+        left: 55rem;
+    }
+
+    .introduction:lang(vi){
+        margin-left: 56rem;
+        width: 80rem;
+    }
+
+    .provide_introduction:lang(vi){
+        left: 45rem;
+    }
+
+    .language_of_use:lang(ja) {
+        left: 55rem;
+    }
+
+    .provide_introduction:lang(zh-cn){
+        left: 55rem;
+    }
+
+    /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+    
+    #map {
+        margin-top: 0%;
+        margin-left: 30%;
+    }
+    
+    .use {
+        position: relative;
+        left: 2rem;
+        width: 100rem;
+    }
+    
+    .introduction{
+        margin-left: 65rem;
+    } 
+    
+    #list {
+        margin-left: 30rem;
+    }
+    .list_introduction {
+        position: relative;
+        left: 80rem;
+    }
+    
+    #provide_of_list {
+        margin-left: 40rem;
+    }
+    
+    .provide_introduction{
+        position: relative;
+        left: 45rem;
+    }
+
+    .pagination a:hover:not(.active) {background-color: #4caf50;}
+
+    .slide:nth-child(1){
+        animation-delay: 0;
+    }
+    .slide:nth-child(3){
+        animation-delay: -5s;
+    }
+    .slide:nth-child(2){
+        animation-delay: -10s;
+    }
+    
+    @keyframes slider {
+        0% {
+          transform: translateX(0);
+        }
+      
+        26% {
+          transform: translateX(0);
+        }
+        33% {
+          transform: translateX(-100%);
+          animation-timing-function: step-end;
+        }
+        93% {
+          transform: translateX(100%);
+        }
+      
+        100% {
+          transform: translateX(0);
+        }
+    }
+}
