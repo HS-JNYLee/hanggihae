@@ -74,7 +74,7 @@ ul{
 .section {
     position: relative;
     top: 0rem;
-    left: 28rem;
+    left: 18rem;
     border-radius: 1.875rem;
     border-style:solid;
     width: 70rem; height: 50rem;
@@ -464,6 +464,18 @@ span:lang(zh-cn) {
 
 @media (min-width: 2560px) {
     .section {
-        left: 50%;
+        left: 28%;
     }
-} 
+}
+
+@media (max-width: 1440px) {
+    .section {
+        left: 10%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section {
+        left: 1%;
+    }
+}
