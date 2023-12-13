@@ -34,8 +34,8 @@
   }
 
   .rectangle {
-    position: absolute;
-    width: calc(100% - 80px); /* 10px 여백 고려하여 조정 */
+    /*1 position: absolute; */
+    width: calc(100% - 400px); /* 10px 여백 고려하여 조정 */
     height: 250px;
     top: 80px;
     left: 50%;
@@ -43,10 +43,19 @@
     border-radius: 30px;
     border: 2px solid #000;
     background: rgba(150, 209, 242, 0.66);
-    display: flex;
+    /* 1 display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px; /* 각 사각형 간격을 위한 여백 */
+    
+  /* 1 display: flex; /* 추가 */
+  /* 1 justify-content: space-between;
+  align-items: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 650px;
+  /*flex-direction: column; /* 추가 */
   }
 
   .small-rectangle {
@@ -54,6 +63,7 @@
     border-radius: 30px;
     border: 2px solid #000;
     background: #FFF;
+   /*1 margin-bottom: 20px; /* 아래쪽 간격 추가 */
   }
 
   .left-small-rectangle {
@@ -70,7 +80,7 @@
     border-radius: 50%;
     border: 2px solid #000;
     background: #FFF; /* 배경색을 하얀색으로 설정 */
-    position: absolute;
+    /*position: absolute;*/
     top: -8px;
     left: -8px;
     display: flex;
@@ -80,7 +90,7 @@
 
   /* 작은 사각형 안의 텍스트 */
   .text-inside-small-rectangle {
-    position: absolute;
+    /*position: absolute;*/
     top: 30px; /* 위쪽에서 5px */
     left: 60px; /* 왼쪽에서 10px */
     color: #000;
@@ -93,7 +103,7 @@
   .image-1 {
     width: 150px;
     height: 100px;
-    position: absolute;
+   /*position: absolute;*/
     top: 70px; /* 텍스트 아래에서 5px 떨어진 곳 */
     left: 20%;
     border-radius: 10px;
@@ -104,7 +114,7 @@
   .image-2 {
     width: 150px;
     height: 20px;
-    position: absolute;
+ /*position: absolute;*/
     top: 190px; /* 사진1 아래에서 5px 떨어진 곳 */
     left: 14%;
     transform: translateX(-50%);
@@ -114,7 +124,7 @@
   .rectangle-6 {
     width: 230px;
     height: 140px;
-    position: absolute;
+   /*position: absolute;*/
     top: 30px; /* 사진2 아래에서 5px 떨어진 곳 */
     left: 45%;
     transform: translateX(-50%);
@@ -131,7 +141,7 @@
 
   /* "상세보기" 텍스트 */
   .detail-text {
-    position: absolute;
+ /*position: absolute;*/
     width: 100px; /* 텍스트 크기에 따라 조정 */
     height: 50px;
     top: 125px; /* 사각형6의 테두리를 기준으로 아래에서 5px 떨어진 곳 */
@@ -142,7 +152,7 @@
 
   /* "02-111-1111" 텍스트 */
   .contact-info {
-    position: absolute;
+ /*position: absolute;*/
     top: 170px; /* 사각형6의 테두리를 기준으로 아래에서 10px 떨어진 곳 */
     right: 155px; /* 오른쪽으로 10px */
     font-size: 12px;
@@ -151,7 +161,7 @@
 
   /* "www.nitip.com" 텍스트 */
   .website-info {
-    position: absolute;
+  /*position: absolute;*/
     top: 170px; /* 사각형6의 테두리를 기준으로 아래에서 10px 떨어진 곳 */
     right: 10px; /* 오른쪽으로 10px */
     font-size: 12px;
@@ -162,7 +172,7 @@
   .image-3 {
     width: 160px;
     height: 110px;
-    position: absolute;
+ /*position: absolute;*/
     top: 30px; /* 테두리를 기준으로 위에서 3px 떨어진 곳 */
     right: 43px; /* 오른쪽에서 10px */
     border-radius: 10px;
@@ -172,7 +182,7 @@
   .image-4 {
     width: 100px;
     height: 20px;
-    position: absolute;
+ /*position: absolute;*/
     top: 150px; /* 사진4 아래에서 3px 떨어진 곳 */
     right: 43px; /* 오른쪽에서 10px */
   }
@@ -181,7 +191,7 @@
   .rectangle-7 {
     width: 180px;
     height: 40px;
-    position: absolute;
+ /*position: absolute;*/
     top: 180px; /* 사각형 테두리를 기준으로 아래에서 10px 떨어진 곳 */
     right: 30px; /* 오른쪽에서 10px */
     border: 2px solid #000;
